@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"C:/Hibernate Marterial/hibernate-mapping-3.0.dtd">
+
+ 
+<hibernate-mapping>
+<class name="ManyToManyPackage.Student"  table="student">
+ 
+<id name="sId" column="studentid" />
+ 
+<property name="sName" column="studentname" length="20"/>
+
+ 
+<set name="teacherchildren" cascade="all"  table="students_courses">
+ 
+<key column="s_id "/>
+<many-to-many class="ManyToManyPackage.Teacher"  column="t_id" />
+ 
+</set>
+ 
+</class>
+ 
+</hibernate-mapping>
