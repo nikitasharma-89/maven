@@ -17,7 +17,7 @@
 <many-to-many class="ManyToManyPackage.Student" column="s_id "/>
  
 </set>
- 
+ bbhkh
 </class>
  
 </hibernate-mapping>
