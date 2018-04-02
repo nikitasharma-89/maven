@@ -15,7 +15,7 @@
  
 <key column="t_id" />
 <many-to-many class="ManyToManyPackage.Student" column="s_id "/>
- 
+ ggggg
 </set>
  
 </class>
